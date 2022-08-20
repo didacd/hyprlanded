@@ -154,5 +154,14 @@
     "tray": {
         "icon-size": 16,
         "spacing": 10
-    }
+    },
+
+  "custom/media": {
+    "exec": "$HOME/.config/hypr/waybar/mediaplayer.py --player cider",
+    "format": "{}  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+  },
 }

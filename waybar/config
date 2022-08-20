@@ -22,6 +22,6 @@
     "ipc": true, 		
  
     "modules-left": ["custom/menu", "cpu", "memory", "disk"],
-    "modules-center": ["mpd"],
-    "modules-right": ["pulseaudio", "backlight", "network", "battery", "clock", "tray", "custom/power"],
+    "modules-center": ["custom/media"],
+    "modules-right": ["pulseaudio", "network", "clock", "tray", "custom/power"],
 }
