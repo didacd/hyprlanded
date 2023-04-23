@@ -7,5 +7,5 @@ git clone https://github.com/didzc11/hyprlanded ~/.config/hypr
 ### Depencencies installation
 #### Arch:
 ```bash
-paru -S hyprland swaybg swayidle swaylock wlroots wl-clipboard waybar wofi foot mako grim slurp wf-recorder light yad thunar geany mpv mpd mpc viewnior imagemagick xfce-polkit xorg-xwayland
+paru -S hyprland swaybg swayidle swaylock wlroots wl-clipboard waybar wofi foot mako grim slurp wf-recorder light yad thunar geany mpv mpd mpc viewnior imagemagick xfce-polkit xorg-xwayland alsa-utils pavucontrol nwg-look
 ```
