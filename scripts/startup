@@ -13,7 +13,8 @@ for _prs in "${_ps[@]}"; do
 done
 
 # Polkit agent
-/usr/lib/xfce-polkit/xfce-polkit &
+#/usr/lib/xfce-polkit/xfce-polkit &
+/usr/bin/gnome-keyring-daemon &
 
 # Set wallpaper
 swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/lofi_boy.jpg &

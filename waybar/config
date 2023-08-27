@@ -2,10 +2,10 @@
 //
 // Waybar config file
 {
+    "layer": "top", 	
     "include": "~/.config/hypr/waybar/modules",
     "name": "main-bar", 
     "id": "main-bar", 	
-    "layer": "top", 	
     "mode": "dock", 	
     "exclusive": true, 	
     "passthrough": false, 

@@ -59,18 +59,18 @@
 	// waybar-cpu
     "cpu": {
          "interval": 5,
-         "format": " LOAD: {usage}%",
+         "format": " LOAD: {usage}%",
     },
            
 	// waybar-custom
     "custom/menu": {
-         "format": "",
+         "format": "󰣇",
          "tooltip": false,
          "on-click": "$HOME/.config/hypr/scripts/menu",
     },
 
     "custom/power": {
-         "format": "襤",
+         "format": "⏻",
          "tooltip": false,
          "on-click": "$HOME/.config/hypr/scripts/wlogout",
     },
@@ -78,13 +78,13 @@
 	// waybar-disk
     "disk": {
          "interval": 30,
-         "format": " FREE: {free}",
+         "format": "󰆼 FREE: {free}",
     },           	
 	
 	// waybar-memory
     "memory": {
          "interval": 10,
-         "format": " USED: {used:0.1f}G",
+         "format": " USED: {used:0.1f}G",
     },
            
 	// waybar-mpd
@@ -93,7 +93,7 @@
         "unknown-tag": "N/A",
 
         "format": "{stateIcon} {artist} - {title}",
-        "format-disconnected": " Disconnected",
+        "format-disconnected": " Disconnected",
         "format-paused": "{stateIcon} {artist} - {title}",
         "format-stopped": "Stopped ",
         "state-icons": {
@@ -117,10 +117,10 @@
 		"interval": 5,
         //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
         "format-wifi": " {essid}",
-        "format-ethernet": " {ipaddr}/{cidr}",
-        "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "睊 Disconnected",
-        "format-disabled": "睊 Disabled",
+        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+        "format-linked": "󰲐 {ifname} (No IP)",
+        "format-disconnected": "󰈂 Disconnected",
+        "format-disabled": " Disabled",
         "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
         "tooltip-format": " {ifname} via {gwaddr}",
     },
