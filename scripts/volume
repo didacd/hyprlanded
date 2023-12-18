@@ -34,12 +34,12 @@ notify_user() {
 
 # Increase Volume
 inc_volume() {
-	amixer -Mq set Master,0 5%+ unmute && get_icon && notify_user
+	amixer -Mq set Master,0 2%+ unmute && get_icon && notify_user
 }
 
 # Decrease Volume
 dec_volume() {
-	amixer -Mq set Master,0 5%- unmute && get_icon && notify_user
+	amixer -Mq set Master,0 2%- unmute && get_icon && notify_user
 }
 
 # Toggle Mute
