@@ -136,8 +136,8 @@
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "󱆂",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
@@ -157,7 +157,7 @@
     },
 
   "custom/media": {
-    "exec": "$HOME/.config/hypr/waybar/mediaplayer.py --player cider",
+    "exec": "$HOME/.config/hypr/waybar/mediaplayer.py --player cider2",
     "format": "{}  ",
     "return-type": "json",
     "on-click": "playerctl play-pause",
