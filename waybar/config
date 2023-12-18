@@ -6,7 +6,6 @@
     "include": "~/.config/hypr/waybar/modules",
     "name": "main-bar", 
     "id": "main-bar", 	
-    "mode": "dock", 	
     "exclusive": true, 	
     "passthrough": false, 
     "position": "top", 	
