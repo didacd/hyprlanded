@@ -4,10 +4,10 @@
 
 ## Set GTK Themes, Icons, Cursor and Fonts
 
-THEME='Catppuccin-Mocha-Standard-Rosewater-Dark'
-ICONS='WhiteSur-dark'
+THEME='Breeze-Dark'
+ICONS='Infinity Dark'
 FONT='Noto Sans 9'
-CURSOR='Qogirr'
+CURSOR='Breeze'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 

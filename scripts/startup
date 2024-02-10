@@ -24,3 +24,5 @@ done
 
 # Start mpd
 exec mpd &
+nm-applet &
+blueman-applet &
