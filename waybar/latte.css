@@ -5,11 +5,11 @@
 *
 */
 
-@define-color base   #eff1f5;
+@define-color base #eff1f5;
 @define-color mantle #e6e9ef;
-@define-color crust  #dce0e8;
+@define-color crust #dce0e8;
 
-@define-color text     #4c4f69;
+@define-color text #4c4f69;
 @define-color subtext0 #6c6f85;
 @define-color subtext1 #5c5f77;
 
@@ -21,36 +21,39 @@
 @define-color overlay1 #8c8fa1;
 @define-color overlay2 #7c7f93;
 
-@define-color blue      #1e66f5;
-@define-color lavender  #7287fd;
-@define-color sapphire  #209fb5;
-@define-color sky       #04a5e5;
-@define-color teal      #179299;
-@define-color green     #40a02b;
-@define-color yellow    #df8e1d;
-@define-color peach     #fe640b;
-@define-color maroon    #e64553;
-@define-color red       #d20f39;
-@define-color mauve     #8839ef;
-@define-color pink      #ea76cb;
-@define-color flamingo  #dd7878;
+@define-color blue #1e66f5;
+@define-color lavender #7287fd;
+@define-color sapphire #209fb5;
+@define-color sky #04a5e5;
+@define-color teal #179299;
+@define-color green #40a02b;
+@define-color yellow #df8e1d;
+@define-color peach #fe640b;
+@define-color maroon #e64553;
+@define-color red #d20f39;
+@define-color mauve #8839ef;
+@define-color pink #ea76cb;
+@define-color flamingo #dd7878;
 @define-color rosewater #dc8a78;
-
 
 /** ********** Fonts ********** **/
 * {
-    font-family: "JetBrainsMono Nerd Font", archcraft, sans-serif;
-    font-weight: 700;
-    font-size: 12px;
+  font-family: "CaskaydiaCove Nerd Font", archcraft, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
 }
+
 window#waybar {
   background-color: @base;
   color: @base;
   border-bottom: 1px solid @lavender;
   transition-property: background-color;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
-window#waybar.hidden {opacity: 0.5;}
+
+window#waybar.hidden {
+  opacity: 0.5;
+}
 
 @keyframes blink {
   to {
@@ -60,7 +63,7 @@ window#waybar.hidden {opacity: 0.5;}
 
 /** ********** Clock ********** **/
 #clock {
-	color: @green;
+  color: @green;
 }
 
 /** ********** CPU ********** **/
@@ -70,109 +73,113 @@ window#waybar.hidden {opacity: 0.5;}
 
 /** ********** Memory ********** **/
 #memory {
-	color: @maroon;
+  color: @maroon;
 }
 
 /** ********** Disk ********** **/
 #disk {
-	color: @pink;
+  color: @pink;
 }
 
 /** ********** Tray ********** **/
 #tray {
-	/*color: #b4befe;*/
+  /*color: #b4befe;*/
 }
-#tray > .passive {
-    -gtk-icon-effect: dim;
+
+#tray>.passive {
+  -gtk-icon-effect: dim;
 }
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
+
+#tray>.needs-attention {
+  -gtk-icon-effect: highlight;
 }
-#tray > .active {
-}
+
+#tray>.active {}
 
 /** ********** MPD ********** **/
 #mpd {
-	color: @teal;
+  color: @teal;
 }
 
 #mpd.disconnected {
-	color: @red;
+  color: @red;
 }
 
 #mpd.stopped {
-	color: pink;
+  color: pink;
 }
 
 #mpd.playing {
-	color: @flamingo;
+  color: @flamingo;
 }
 
-#mpd.paused {
-}
+#mpd.paused {}
 
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-	color: @flamingo;
+  color: @flamingo;
 }
 
 #pulseaudio.bluetooth {
-	color: @rosewater;
+  color: @rosewater;
 }
+
 #pulseaudio.muted {
-	/*color: #313244;*/
-	color: @text;
+  /*color: #313244;*/
+  color: @text;
 }
 
 /** ********** Network ********** **/
 #network {
-	color: @sapphire;
+  color: @sapphire;
 }
 
-#network.disconnected,#network.disabled {
-	/*color: #313244;*/
-	color: @red;
+#network.disconnected,
+#network.disabled {
+  /*color: #313244;*/
+  color: @red;
 }
-#network.linked {
-}
-#network.ethernet {
-}
-#network.wifi {
-}
+
+#network.linked {}
+
+#network.ethernet {}
+
+#network.wifi {}
 
 /** ********** Custom ********** **/
-#custom-menu, #custom-power {
-	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
+#custom-menu,
+#custom-power {
+  border-radius: 4px;
+  margin: 6px 0px;
+  padding: 2px 8px;
 }
 
 #custom-menu {
-	color: @rosewater;
-	margin-left: 6px;
-	padding: 2px 6px;
-	font-size: 16px;
+  color: @rosewater;
+  margin-left: 6px;
+  padding: 2px 6px;
+  font-size: 16px;
 }
 
 #custom-power {
-	color: @rosewater;
-	margin-right: 6px;
-	padding: 2px 8px;
-	font-size: 16px;
+  color: @rosewater;
+  margin-right: 6px;
+  padding: 2px 8px;
+  font-size: 16px;
 }
 
 /** ********** Custom Media Player ********** **/
-#custom-media{
-	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
+#custom-media {
+  border-radius: 4px;
+  margin: 6px 0px;
+  padding: 2px 8px;
   color: @flamingo;
-	margin-right: 6px;
-	padding: 2px 8px;
+  margin-right: 6px;
+  padding: 2px 8px;
 }
 
 /** Common style **/
-#backlight, 
+#backlight,
 #battery,
 #clock,
 #cpu,
@@ -183,7 +190,7 @@ window#waybar.hidden {opacity: 0.5;}
 #tray,
 #pulseaudio,
 #network {
-	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
+  border-radius: 4px;
+  margin: 6px 0px;
+  padding: 2px 8px;
 }

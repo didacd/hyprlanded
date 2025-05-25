@@ -4,9 +4,9 @@
 
 ## launch mako with alt config
 
-#CONFIG="$HOME/.config/hypr/swaync/config"
-STYLE="$HOME/.config/hypr/swaync/style.css"
+CONFIG="$HOME/.config/hypr/swaynd/config.json"
+STYLE="$HOME/.config/hypr/swaynd/style.css"
 
 if [[ ! $(pidof swaync) ]]; then
-  swaync --style ${STYLE} # Config currently not managed
+  swaync --style ${STYLE} --config ${CONFIG}
 fi

@@ -4,11 +4,11 @@
 
 ## launch waybar with alt config
 
-CONFIG="$HOME/.config/hypr/waybar/config"
+CONFIG="$HOME/.config/hypr/waybar/config.json"
 DARK_MODE="$HOME/.config/hypr/waybar/mocha.css"
 LIGHT_MODE="$HOME/.config/hypr/waybar/latte.css"
 STYLE=$DARK_MODE
 
-if [[ ! `pidof waybar` ]]; then
-	waybar --bar main-bar --log-level error --config ${CONFIG} --style ${STYLE}
+if [[ ! $(pidof waybar) ]]; then
+  waybar --bar main-bar --log-level error --config "${CONFIG}" --style "${STYLE}"
 fi

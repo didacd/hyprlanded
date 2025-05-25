@@ -1,16 +1,10 @@
-// Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-//
-// Waybar modules configuration
 {
-	// waybar-backlight
     "backlight": {
 		"interval": 2,
 		"align": 0,
 		"rotate": 0,
-        //"device": "amdgpu_bl0",
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", ""],
-		// Commands to execute on events
         "on-click": "",
         "on-click-middle": "",
         "on-click-right": "",
@@ -20,13 +14,10 @@
         "smooth-scrolling-threshold": 1,
     },
 
-	// waybar-battery
     "battery": {
 		"interval": 60,
 		"align": 0,
 		"rotate": 0,
-		//"bat": "BAT1",
-		//"adapter": "ACAD",
 		"full-at": 100,
 		"design-capacity": false,
         "states": {
@@ -38,31 +29,26 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-full": "{icon} Full",
-        //"format-good": "",
         "format-alt": "{icon} {time}",
         "format-icons": ["", "", "", "", ""],
         "format-time": "{H}h {M}min",
         "tooltip": true,
     },
 
-	// waybar-clock
     "clock": {
 		"interval": 60,
 		"align": 0,
 		"rotate": 0,
-        //"timezone": "America/New_York",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
         "format": " {:%I:%M %p}",
         "format-alt": " {:%a %b %d, %G}"
     },
 
-	// waybar-cpu
     "cpu": {
          "interval": 5,
          "format": " LOAD: {usage}%",
     },
            
-	// waybar-custom
     "custom/menu": {
          "format": "󰣇",
          "tooltip": false,
@@ -75,19 +61,16 @@
          "on-click": "$HOME/.config/hypr/scripts/wlogout",
     },
 
-	// waybar-disk
     "disk": {
          "interval": 30,
          "format": "󰆼 FREE: {free}",
     },           	
 	
-	// waybar-memory
     "memory": {
          "interval": 10,
          "format": " USED: {used:0.1f}G",
     },
            
-	// waybar-mpd
     "mpd": {
         "interval": 2,
         "unknown-tag": "N/A",
@@ -102,7 +85,6 @@
         },
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)",
-		// Commands to execute on events
         "on-click": "mpc toggle",
         "on-click-middle": "mpc prev",
         "on-click-right": "mpc next",
@@ -112,10 +94,8 @@
         "smooth-scrolling-threshold": 1,
     },
 
-	// waybar-network
     "network": {
 		"interval": 5,
-        //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
         "format-wifi": " {essid}",
         "format-ethernet": "󰈀 {ipaddr}/{cidr}",
         "format-linked": "󰲐 {ifname} (No IP)",
@@ -125,9 +105,7 @@
         "tooltip-format": " {ifname} via {gwaddr}",
     },
 
-	// waybar-pulseaudio
     "pulseaudio": {
-        //"format": "{volume}% {icon} {format_source}",
         "format": "{icon} {volume}%",
         "format-muted": " Mute",
         "format-bluetooth": " {volume}% {format_source}",
@@ -144,13 +122,11 @@
             "default": ["", "", ""]
         },
         "scroll-step": 5.0,
-		// Commands to execute on events
         "on-click": "amixer set Master toggle",
         "on-click-right": "pavucontrol",
         "smooth-scrolling-threshold": 1,
     },
 
-	// waybar-tray
     "tray": {
         "icon-size": 16,
         "spacing": 10,
@@ -158,11 +134,19 @@
     },
 
   "custom/media": {
-    "exec": "$HOME/.config/hypr/waybar/mediaplayer.py --player cider2",
+    "exec": "$HOME/.config/hypr/waybar/mediaplayer.py --player cider",
     "format": "{}  ",
     "return-type": "json",
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous"
   },
+  "custom/notifications": {
+    "exec": "$HOME/.config/hypr/waybar/notifications.sh",
+    "interval": 5,
+    "format": "{}",
+    "on-click": "swaync-client -t",
+    "return-type": "json",
+    "tooltip": false
+  }
 }

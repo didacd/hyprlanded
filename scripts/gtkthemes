@@ -2,7 +2,7 @@
 
 ## Set GTK Themes, Icons, Cursor and Fonts
 
-THEME='Breeze-Dark'
+THEME='catppuccin-mocha-green-standard+default'
 ICONS='Papirus'
 FONT='Noto Sans 9'
 CURSOR='Breeze'

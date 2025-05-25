@@ -1,9 +1,6 @@
-// Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-//
-// Waybar config file
 {
     "layer": "top", 	
-    "include": "~/.config/hypr/waybar/modules",
+    "include": "~/.config/hypr/waybar/modules.json",
     "name": "main-bar", 
     "id": "main-bar", 	
     "exclusive": true, 	
@@ -21,6 +18,6 @@
     "ipc": true, 		
  
     "modules-left": ["custom/menu", "cpu", "memory", "disk"],
-    "modules-center": ["custom/media"],
-    "modules-right": ["pulseaudio", "network", "clock", "tray", "custom/power"],
+    "modules-center": [ "custom/media"],
+    "modules-right": ["custom/notifications", "pulseaudio", "network", "clock", "tray", "custom/power"]
 }
