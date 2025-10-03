@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-
-## launch mako with alt config
-
-CONFIG="$HOME/.config/hypr/swaynd/config.json"
-STYLE="$HOME/.config/hypr/swaynd/style.css"
+CONFIG="$HOME/.config/hypr/swaync/config.json"
+STYLE="$HOME/.config/hypr/swaync/style.css"
 
 if [[ ! $(pidof swaync) ]]; then
   swaync --style ${STYLE} --config ${CONFIG}

@@ -2,10 +2,11 @@
 
 ## Set GTK Themes, Icons, Cursor and Fonts
 
-THEME='catppuccin-mocha-green-standard+default'
+#THEME='catppuccin-mocha-teal-standard+default'
+THEME='Breeze-Dark'
 ICONS='Papirus'
 FONT='Noto Sans 9'
-CURSOR='Breeze'
+CURSOR='Breeze Dark'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 

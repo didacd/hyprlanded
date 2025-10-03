@@ -7,7 +7,7 @@ show=drun
 prompt=Apps
 normal_window=true
 layer=top
-term=foot
+term=ghostty
 
 ## Geometry
 width=500px

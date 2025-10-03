@@ -19,6 +19,9 @@ done
 # Lauch statusbar (waybar)
 ~/.config/hypr/scripts/statusbar &
 
+# ProtonDrive
+~/.config/start_protondrive.sh
+
 # Start mpd
 exec mpd &
 nm-applet &
