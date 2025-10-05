@@ -8,7 +8,7 @@ git clone https://github.com/didzc11/hyprlanded ~/.config/hypr
 
 #### Arch:
 ```bash
-paru -S hyprland hyprpaper wlroots wl-clipboard waybar wofi swaync grim slurp wf-recorder light yad dolphin geany mpv mpd mpc viewnior imagemagick polkit-kde-agent xorg-xwayland alsa-utils pavucontrol nwg-look wlogout-git qt5ct qt6ct kvantum papirus-icon-theme
+paru -S hyprland hyprpaper wlroots wl-clipboard waybar rofi swaync grim slurp wf-recorder light yad dolphin geany mpv mpd mpc viewnior imagemagick polkit-kde-agent xorg-xwayland alsa-utils pavucontrol nwg-look wlogout-git qt5ct qt6ct kvantum papirus-icon-theme
 ```
 
 ### Specifications
@@ -20,7 +20,7 @@ are used.
 - Wallpaper engine: `hyprpaper`
 - Wallpaper selector: `waypaper`
 - Top bar: `waybar`
-- Dmenu-like utility: `wofi`
+- Dmenu-like utility: `rofi`
 - Notificaiton daemon: `swaync`
 - Screenshots: `grim` & `slurp`
 - File manager: `dolphin` (fallback: `thunar`)
