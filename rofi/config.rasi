@@ -36,7 +36,7 @@
 configuration {
   font: "CaskaydiaCove Nerd Font 14";
   combi-modi: "window,drun,ssh";
-  hover-select: true;
+  //hover-select: true;
   sidebar-mode: true;
   kb-mode-next: "Tab";
   kb-element-next: ""; // disabled
