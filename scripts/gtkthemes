@@ -6,7 +6,7 @@
 THEME='Breeze-Dark'
 ICONS='Papirus'
 FONT='Noto Sans 9'
-CURSOR='Breeze Dark'
+CURSOR='catppuccin-mocha-dark'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
@@ -15,6 +15,7 @@ apply_themes() {
   ${SCHEMA} icon-theme "$ICONS"
   ${SCHEMA} cursor-theme "$CURSOR"
   ${SCHEMA} font-name "$FONT"
+  hyprctl setcursor catppuccin-mocha-dark 24
 }
 
 apply_themes

@@ -36,9 +36,9 @@ elif [[ "$1" == '--suspend' ]]; then
   cdialog
   if [[ "$?" == 0 ]]; then
     mpc -q pause
-    amixer set Master mute
-    hyprlock
-    systemctl suspend
+    hyprlock &
+    disown && systemctl suspend
+    #amixer set Master mute
   else
     exit
   fi
